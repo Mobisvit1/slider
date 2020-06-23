@@ -1,0 +1,390 @@
+@charset "UTF-8";
+* {
+		padding: 0;
+		margin: 0;
+		border: 0;
+}
+
+*,
+*:before,
+*:after {
+		box-sizing: border-box;
+}
+
+:focus,
+:active {
+		outline: none;
+}
+
+a:focus,
+a:active {
+		outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+		display: block;
+}
+
+html,
+body {
+		height: 100%;
+		width: 100%;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 14px;
+		-ms-text-size-adjust: 100%;
+		-moz-text-size-adjust: 100%;
+		-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+		font-family: inherit;
+}
+
+input::-ms-clear {
+		display: none;
+}
+
+button {
+		cursor: pointer;
+}
+
+button::-moz-focus-inner {
+		padding: 0;
+		border: 0;
+}
+
+a,
+a:visited {
+		text-decoration: none;
+}
+
+a:hover {
+		text-decoration: none;
+}
+
+ul li {
+		list-style: none;
+}
+
+img {
+		vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+		font-size: inherit;
+		font-weight: inherit;
+}
+
+* {
+		font-family: "Open Sans", "Bebas Neue", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+		font-family: "Bebas Neue", cursive;
+}
+
+.header {
+		width: 100%;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		padding: 21px 120px 53px 120px;
+		background: #000 url(../img/bg_header.jpg) no-repeat center center/contain;
+		background-size: 100% 110%;
+		background-attachment: fixed;
+		background-position: center;
+		overflow: hidden;
+		box-shadow: inset 0px -92px 43px -45px rgba(0, 0, 0, 0.77);
+}
+
+.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+}
+
+.header_nav {
+		margin: 0px 0px 0px 10%;
+}
+
+.header_nav-item {
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 16px;
+		letter-spacing: 0.1em;
+		transition: all 0.3s ease;
+}
+.header_nav-item:hover {
+		color: rgba(235, 235, 235, 0.5);
+}
+.header_nav-item:focus {
+		color: rgba(235, 235, 235, 0.5);
+}
+.header_nav-item:nth-child(1) {
+		margin: 0px 48px 0px 0px;
+}
+.header_nav-item:nth-child(2) {
+		margin: 0px 39px 0px 0px;
+}
+.header_nav-item:nth-child(3) {
+		margin: 0px 45px 0px 0px;
+}
+.header_nav-item:nth-child(4) {
+		margin: 0px 56px 0px 0px;
+}
+.header_nav-item:last-child {
+		margin: 0px 0px 0px 0px;
+}
+
+.header_gamelink {
+		position: relative;
+		display: flex;
+		align-items: center;
+}
+
+.header-language {
+		position: relative;
+		margin: 0px 61px 0px 0px;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 16px;
+		text-align: right;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+}
+.header-language::after {
+		content: "";
+		display: block;
+		font-family: "Font Awesome 5 Free";
+		position: absolute;
+		top: 0;
+		right: -70%;
+		transform: rotate(-180deg);
+		transition: all 0.5s ease;
+}
+.header-language:focus::after {
+		transform: rotate(4deg);
+}
+.header-language:focus + .header_dropdown-language {
+		display: flex;
+}
+
+.header_dropdown-language {
+		position: absolute;
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		padding: 5.5px 20.27px 5.5px 4.5px;
+		background: rgba(0, 0, 0, 0.75);
+		border-radius: 3px;
+		bottom: -70px;
+}
+
+.active {
+		display: flex;
+}
+
+.language {
+		margin: 0px 0px 5px 0px;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 16px;
+		text-align: right;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		transition: all 0.3s ease;
+}
+.language:hover {
+		color: #FFB548;
+}
+.language:focus {
+		color: #FFB548;
+}
+.language:last-child {
+		margin: 0px 0px 0px 0px;
+}
+
+.header_gamelink-item:last-child {
+		margin: 0px 0px 0px 21px;
+}
+
+.xbox {
+		position: relative;
+}
+.xbox::before {
+		content: "";
+		display: block;
+		position: absolute;
+		left: -25px;
+		width: 1px;
+		height: 100%;
+		background: rgba(235, 235, 235, 0.5);
+}
+
+.header_descr {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		margin: 250px 0px 0px 0px;
+}
+
+.header-title {
+		font-weight: bold;
+		font-size: 80px;
+		line-height: 80px;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		color: #fff;
+}
+
+.header-subtitle {
+		margin: 9px 0px 0px 0px;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 24px;
+		letter-spacing: 2px;
+		color: #fff;
+}
+
+.header-button {
+		margin: 29px 0px 0px 0px;
+		padding: 17px 18px 20px 17px;
+		background: linear-gradient(183.46deg, #FFB548 11.27%, #F3AF34 90.4%);
+		border-radius: 4px;
+		color: #000;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 22px;
+		color: #1A1917;
+}
+
+.span-button:first-child::after {
+		content: "";
+		opacity: 0.5;
+		border: 0.873968px solid #1A1917;
+		margin: 0px 13px 0px 11px;
+}
+
+.header-story {
+		margin: 360px 0px 0px 0px;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 22px;
+		transition: all 0.4s ease;
+		text-transform: uppercase;
+		color: #FFFFFF;
+}
+.header-story:hover {
+		color: rgba(235, 235, 235, 0.5);
+}
+.header-story::after {
+		content: "";
+		display: block;
+		font-family: "Font Awesome 5 Free";
+		font-size: 13px;
+}
+
+.portfolio {
+		background: black url(../img/bg_portfolio.jpg) no-repeat center center/cover;
+		min-height: 100vh;
+		width: 100%;
+		background-attachment: fixed;
+		background-position: center;
+		box-shadow: inset 0px 156px 116px -75px rgba(0, 0, 0, 0.75);
+		z-index: -999;
+}
+
+.container {
+		max-width: 1185px;
+		width: 100%;
+		margin: 0 auto;
+}
+
+.portfolio_wrapper {
+		display: flex;
+		align-items: center;
+		flex-basis: 50%;
+}
+
+.portfolio_description {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+}
+
+.portfolio_titles-title {
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 24px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+}
+
+.portfolio_titles-subtitle {
+		font-weight: bold;
+		font-size: 80px;
+		line-height: 80px;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		text-transform: uppercase;
+		color: #FFFFFF;
+}
+
+.portfolio_text-info {
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 22px;
+		color: #FFFFFF;
+		max-width: 360px;
+}
+.portfolio_text-info span:after {
+		content: "";
+		display: inline-block;
+		height: 2px;
+		width: 10px;
+		z-index: -998;
+		background: #FFB548;
+}
+
+.portfolio_slider_wrapper {
+		display: flex;
+}
+
+.slider-item {
+		/* Center slide text vertically */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+
+.slider-img {
+		max-height: 610px;
+}
+
+.swiper-container {
+		width: 600px;
+		max-height: 610px;
+}
